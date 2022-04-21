@@ -1,0 +1,26 @@
+{
+  "name": "vite-demo-react",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "dev:sit": "vite --mode dev-sit",
+    "build": "vite build",
+    "build:sit": "vite build --mode dev-sit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "antd": "^4.19.5",
+    "axios": "^0.26.1",
+    "dva": "^2.4.1",
+    "esbuild-windows-64": "^0.14.36",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.9.0",
+    "vite-plugin-babel-import": "^2.0.5"
+  }
+}
