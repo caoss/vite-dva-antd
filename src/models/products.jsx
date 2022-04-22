@@ -2,7 +2,7 @@ import {mokeGet} from "@/services/payment"
 export default {
   namespace : 'products',
     state: {
-      name:'ssss',
+      name:'sss2222s',
       products:[],
     },
     reducers: {

@@ -12,6 +12,7 @@ export default defineConfig({
     // alias: [{ find: '@', replacement: resolve(__dirname, 'src') }]
   },
   server: {
+    port:"3002",
     // proxy: {
     //   [`${loadEnv(mode, process.cwd()).VITE_APP_BASE_API}`]: {
     //       target: loadEnv(mode, process.cwd()).VITE_TEST_HOST, // 线上
@@ -75,3 +76,5 @@ export default defineConfig({
     },
   },
 })
+
+// 缺点:当使用了dva的model时,model文件修改了,不会自动刷新

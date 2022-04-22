@@ -5,7 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import CCC from "./pages/CCC";
+import CCC from "@/pages/CCC";
 import dynamic from 'dva/dynamic'
 
 console.log( 'react',React)   
@@ -15,22 +15,21 @@ console.log( 'react',React)
 
 export default function BasicExample({app}) {
   console.log( '-----env' , import.meta.env) ;
-
   // model分为全局的和局部的
   const Home = dynamic({
     app,
     component: () => import('./pages/Home'),
       models: () => [
-      import('./models/products'),
-      import('./models/aaa'),
-      import('./models/bbb'),
+      import('@/models/home'),
+      import('@/models/products'),
+      import('@/models/bbb'),
     ],
   });
   const BBB = dynamic({
     app,
-    component: () => import('./pages/BBB'),
+    component: () => import('@/pages/BBB'),
       models: () => [
-      import('./models/bbb'),
+      import('@/models/bbb'),
     ],
   });
 
